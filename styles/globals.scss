@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Cera';
+  src: url("../public/assets/font/cera-130.otf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import 'variables';
+@import 'mixins';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+h1 {
+  font-size: 150px;
+  line-height: 150px;
+  color: #fff;
+  font-weight: 700;
+  font-family: 'Cera', sans-serif;
+}
+h2 {
+  font-size: 50px;
+  font-family: 'Cera', sans-serif;
+  color: #fff;
+}
+h3 {
+  font-size: 35px;
+  font-family: 'Cera', sans-serif;
+  color: #fff;
+}
+h4 {
+  font-size: 22px;
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+}
+p {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  color: $text-color;
+  font-weight: 400
+}
+
+@import 'home';
