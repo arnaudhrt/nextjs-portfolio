@@ -22,7 +22,7 @@
          .row {
             border-bottom: 5px solid $dark-yellow;
             h3 {
-               margin-bottom: 15px;
+               margin: 25px 0 15px;
             }
             p {
                margin-bottom: 10px;
@@ -34,6 +34,9 @@
                span {
                   color: $dark-yellow;
                }
+            }
+            &:first-child h3 {
+               margin: 0 0 15px;
             }
          }
          &::-webkit-scrollbar {
