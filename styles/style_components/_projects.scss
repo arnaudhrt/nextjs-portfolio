@@ -1,0 +1,49 @@
+.projects {
+   width: 100%;
+   height: 100vh;
+   .head {
+      @include head-section;
+      .divider {
+         @include divider;
+      }
+   }
+   .projects-wp {
+      margin: 0 auto;
+      max-width: 930px;
+      max-height: 450px;
+      position: relative;
+      .overflow {
+         margin: 0 auto;
+         max-width: 930px;
+         max-height: 450px;
+         overflow: auto;
+         -ms-overflow-style: none;
+         scrollbar-width: none;
+         .row {
+            border-bottom: 5px solid $dark-yellow;
+            h3 {
+               margin-bottom: 15px;
+            }
+            p {
+               margin-bottom: 10px;
+            }
+            .tags {
+               display: flex;
+               gap: 20px;
+               margin-bottom: 30px;
+               span {
+                  color: $dark-yellow;
+               }
+            }
+         }
+         &::-webkit-scrollbar {
+            display: none;
+         }
+      }
+      .scroll-sign {
+         position: absolute;
+         bottom: 0;
+         right: -50px;
+      }
+   }
+}

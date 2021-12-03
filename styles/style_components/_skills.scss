@@ -1,0 +1,54 @@
+.skills {
+   width: 100%;
+   height: 100vh;
+   .head {
+      @include head-section;
+      .title-wp {
+         display: inline-block;
+         .divider {
+            @include divider;
+         }
+      }
+   }
+   .grid {
+      max-width: 855px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      .row {
+         display: flex;
+         .title-wp {
+            width: 180px;
+            display: flex;
+            align-items: center;
+            padding: 25px 40px 25px 0;
+            border-right: 5px solid $dark-yellow;
+            .title {
+               font-size: 24px;
+               font-weight: 700;
+               line-height: 30px;
+               font-family: 'Cera', sans-serif;
+            }
+         }
+         .content {
+            @include flex-center;
+            gap: 40px;
+            padding: 25px 0 25px 40px;
+            .item {
+               @include flex-center;
+               flex-direction: column;
+               img {
+                  margin-bottom: 7px;
+               }
+               span {
+                  font-weight: 600;
+                  font-size: 18px;
+               }
+            }
+         }
+         &.middle {
+            border-top: 5px solid $dark-yellow;
+            border-bottom: 5px solid $dark-yellow;
+         }
+      }
+   }
+}

@@ -11,23 +11,25 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+
 }
 body {
   min-height: 100vh;
   scroll-behavior: smooth;
-  font-family: 'Open Sans', sans-serif;
-  color: #fff;
 }
 ul,
 ol {
   list-style: none;
 }
-a {
+a, button {
   text-decoration: none;
   color: $text-color;
+  font-size: 18px;
+  line-height: 24px;
 }
 img {
-  max-width: 100%;
   display: block;
 }
 h1 {
@@ -51,12 +53,18 @@ h4 {
   font-size: 22px;
   font-family: 'Open Sans', sans-serif;
   color: $text-color;
+  font-weight: 400;
+  max-width: 740px;
 }
 p {
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
   color: $text-color;
   font-weight: 400
+}
+.capital {
+  font-size: 30px;
+  font-weight: 600;
 }
 
 @import 'home';

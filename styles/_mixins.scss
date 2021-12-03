@@ -1,0 +1,33 @@
+@mixin head-section {
+   margin: 130px 0 70px 120px;
+   display: inline-block;
+}
+
+@mixin divider {
+   height: 5px;
+   width: 100%;
+   background: $dark-yellow;
+   margin: 10px 0 15px;
+}
+
+@mixin hover-underline {
+   &::after {
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      content: '';
+      height: 1px;
+      width: 0%;
+      background: $dark-yellow;
+      transition: width 300ms ease-in-out;
+   }
+   &:hover::after {
+      width: 100%;
+   }
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

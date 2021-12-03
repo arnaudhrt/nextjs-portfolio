@@ -1,0 +1,46 @@
+.profil {
+   width: 100%;
+   height: 100vh;
+   .head {
+      @include head-section;
+      .divider {
+         @include divider;
+      }
+   }
+   .center {
+      display: flex;
+      justify-content: center;
+      gap: 150px;
+      .left {
+         p {
+            max-width: 530px;
+            margin-bottom: 35px;
+         }
+         .resume {
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: none;
+            position: relative;
+            cursor: pointer;
+            @include hover-underline;
+         }
+      }
+      .right {
+         .img-border {
+            width: 400px;
+            height: 320px;
+            border: 4px solid $dark-yellow;
+            .profil-pic {
+               &.active {
+                  position: relative;
+                  top: 50px;
+                  left: -50px;
+               }
+            }
+         }
+      }
+   }
+}
