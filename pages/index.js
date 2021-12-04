@@ -13,12 +13,13 @@ export async function getStaticProps() {
    })
 
    const res = await client.getEntries({
-      content_type: 'portfolio'
+      content_type: 'portfolio',
+      order: 'fields.number'
    })
 
    return {
       props: {
-         projects: res
+         projects: res.items
       }
    }
 }
