@@ -5,6 +5,7 @@ import Profil from '../components/Profil'
 import Projects from '../components/Projects'
 import Skills from '../components/Skills'
 import { createClient } from 'contentful'
+import Contact from '../components/Contact'
 
 export async function getStaticProps() {
    const client = createClient({
@@ -38,6 +39,7 @@ export default function Home(props) {
          <Profil />
          <Skills />
          <Projects projects={props.projects} />
+         <Contact />
       </>
    )
 }

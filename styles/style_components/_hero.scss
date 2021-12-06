@@ -48,7 +48,7 @@
      left: 70px;
      a {
         display: block;
-        padding: 10px;
+        padding: 15px;
         img {
            width: 35px;
            height: 35px;
@@ -67,4 +67,30 @@
   to {
      stroke-dashoffset: 0;
   }
+}
+
+@media screen and (max-width: 1250px) {
+   .hero {
+      .center {
+         svg {
+            height: auto;
+            width: 476px;
+            top: 7px;
+            left: 3px;
+         }
+         span {
+            font-size: 18px;
+            line-height: 22px;
+         }
+         h1 {
+            left: 40px;
+            font-size: 100px;
+            line-height: 100px;
+         }
+         .right {
+            margin-top: 8px;
+            left: 22px;
+         }
+      }
+    }
 }

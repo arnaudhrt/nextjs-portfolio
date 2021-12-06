@@ -44,3 +44,40 @@
       }
    }
 }
+
+@media screen and (max-width: 1250px) {
+   .profil {
+      height: auto;
+      margin: 100px 0;
+      .head {
+         margin: 90px 0 70px 70px;
+         h2 {
+            font-size: 35px;
+         }
+      }
+      .center {
+         gap: 100px;
+         padding: 0 40px;
+         .left {
+            p {
+               max-width: 430px;
+               font-size: 14px;
+               line-height: 18px;
+               .capital {
+                  font-size: 20px;
+               }
+            }
+         }
+         .right {
+            .img-border {
+               width: 300px;
+               height: auto;
+            }
+         }
+      }
+   }
+}
+@media screen and (max-width: 750px) {
+}
+@media screen and (max-width: 450px) {
+}

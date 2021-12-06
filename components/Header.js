@@ -11,9 +11,6 @@ export default function Header() {
                <span className="active">FR</span>
                <span>EN</span>
             </div>
-            <div className="menu">
-               <img src="./assets/svg/menu.svg" alt="Icone menu" />
-            </div>
          </div>
       </header>
    )

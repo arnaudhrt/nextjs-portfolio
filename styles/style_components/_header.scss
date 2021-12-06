@@ -5,12 +5,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 70px 60px 0;
+  padding: 70px 80px 0;
   .right {
-     display: flex;
-     align-items: center;
      .lang {
-        margin-right: 50px;
         span {
            font-size: 22px;
            font-weight: 700;
@@ -24,9 +21,6 @@
               border: 2px solid #fff;
            }
         }
-     }
-     .menu {
-        cursor: pointer;
      }
   }
 }

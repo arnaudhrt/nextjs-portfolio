@@ -1,0 +1,88 @@
+.contact {
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   .head {
+      @include head-section;
+      .title-wp {
+         display: inline-block;
+         .divider {
+            @include divider;
+         }
+      }
+   }
+   .center-wp {
+      margin-top: 70px;
+      @include flex-center;
+      .center {
+         display: flex;
+         margin: 0 auto;
+         max-width: 750px;
+      }
+      .left {
+         display: flex;
+         flex-direction: column;
+         row-gap: 30px;
+         padding-right: 75px;
+         border-right: 5px solid $dark-yellow;
+         text-align: center;
+         h3 {
+            font-size: 30px;
+            margin-bottom: 10px;
+         }
+         a {
+            position: relative;
+            font-size: 22px;
+            @include hover-underline;
+         }
+      }
+      .right {
+         padding-left: 75px;
+         text-align: center;
+         @include flex-center;
+         flex-direction: column;
+         .malt {
+            display: flex;
+            column-gap: 20px;
+            font-family: 'Cera', sans-serif;
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #fff;
+            transition: transform 300ms ease-in-out;
+            &:hover {
+               transform: scale(1.1);
+            }
+         }
+         .social-bar {
+            display: flex;
+            gap: 20px;
+            a {
+               display: block;
+               padding: 10px;
+               img {
+                  width: 35px;
+                  height: 35px;
+                  transition: transform 300ms ease-in-out;
+                  &:hover {
+                     transform: scale(1.2);
+                  }
+               }
+            }
+         }
+      }
+   }
+   .footer {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      display: block;
+      font-size: 14px;
+      font-family: 'Cera', sans-serif;
+      padding: 10px;
+      span {
+         color: $dark-yellow;
+      }
+   }
+}
