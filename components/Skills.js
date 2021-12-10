@@ -16,29 +16,33 @@ export default function Skills() {
                   <span className="title">FRONT-END</span>
                </div>
                <div className="content">
-                  <div className="item">
-                     <img src="./assets/svg/html.svg" alt="HTML icone" />
-                     <span>HTML</span>
+                  <div className="items">
+                     <div className="item">
+                        <img src="./assets/svg/html.svg" alt="HTML icone" />
+                        <span>HTML</span>
+                     </div>
+                     <div className="item">
+                        <img src="./assets/svg/css.svg" alt="css icone" />
+                        <span>CSS</span>
+                     </div>
+                     <div className="item">
+                        <img src="./assets/svg/javascript.svg" alt="javascript icone" />
+                        <span>JAVASCRIPT</span>
+                     </div>
                   </div>
-                  <div className="item">
-                     <img src="./assets/svg/css.svg" alt="css icone" />
-                     <span>CSS</span>
-                  </div>
-                  <div className="item">
-                     <img src="./assets/svg/javascript.svg" alt="javascript icone" />
-                     <span>JAVASCRIPT</span>
-                  </div>
-                  <div className="item">
-                     <img src="./assets/svg/scss.svg" alt="scss icone" />
-                     <span>SASS</span>
-                  </div>
-                  <div className="item">
-                     <img src="./assets/svg/react.svg" alt="reactjs icone" />
-                     <span>REACT.JS</span>
-                  </div>
-                  <div className="item">
-                     <img src="./assets/svg/next.svg" alt="nextjs icone" />
-                     <span>NEXT.JS</span>
+                  <div className="items">
+                     <div className="item">
+                        <img src="./assets/svg/scss.svg" alt="scss icone" />
+                        <span>SASS</span>
+                     </div>
+                     <div className="item">
+                        <img src="./assets/svg/react.svg" alt="reactjs icone" />
+                        <span>REACT.JS</span>
+                     </div>
+                     <div className="item">
+                        <img src="./assets/svg/next.svg" alt="nextjs icone" />
+                        <span>NEXT.JS</span>
+                     </div>
                   </div>
                </div>
             </div>
@@ -47,17 +51,19 @@ export default function Skills() {
                   <span className="title">BACK-END</span>
                </div>
                <div className="content">
-                  <div className="item">
-                     <img src="./assets/svg/node.svg" alt="Nodejs icone" />
-                     <span>NODE.JS</span>
-                  </div>
-                  <div className="item">
-                     <img src="./assets/svg/express.svg" alt="Express icone" />
-                     <span>EXPRESS.JS</span>
-                  </div>
-                  <div className="item">
-                     <img src="./assets/svg/mongodb.svg" alt="Mongodb icone" />
-                     <span>MONGODB</span>
+                  <div className="items">
+                     <div className="item">
+                        <img src="./assets/svg/node.svg" alt="Nodejs icone" />
+                        <span>NODE.JS</span>
+                     </div>
+                     <div className="item">
+                        <img src="./assets/svg/express.svg" alt="Express icone" />
+                        <span>EXPRESS.JS</span>
+                     </div>
+                     <div className="item">
+                        <img src="./assets/svg/mongodb.svg" alt="Mongodb icone" />
+                        <span>MONGODB</span>
+                     </div>
                   </div>
                </div>
             </div>
@@ -66,17 +72,19 @@ export default function Skills() {
                   <span className="title">OUTILS</span>
                </div>
                <div className="content">
-                  <div className="item">
-                     <img src="./assets/svg/vscode.svg" alt="VS code icone" />
-                     <span>VS CODE</span>
-                  </div>
-                  <div className="item">
-                     <img src="./assets/svg/github.svg" alt="Github icone" />
-                     <span>GIT & GITHUB</span>
-                  </div>
-                  <div className="item">
-                     <img src="./assets/svg/figma.svg" alt="Figma icone" />
-                     <span>FIGMA</span>
+                  <div className="items">
+                     <div className="item">
+                        <img src="./assets/svg/vscode.svg" alt="VS code icone" />
+                        <span>VS CODE</span>
+                     </div>
+                     <div className="item">
+                        <img src="./assets/svg/github.svg" alt="Github icone" />
+                        <span>GIT & GITHUB</span>
+                     </div>
+                     <div className="item">
+                        <img src="./assets/svg/figma.svg" alt="Figma icone" />
+                        <span>FIGMA</span>
+                     </div>
                   </div>
                </div>
             </div>

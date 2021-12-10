@@ -47,7 +47,7 @@
                margin: 25px 0 10px;
             }
             .description {
-              max-width: 85%;
+               max-width: 85%;
             }
             p {
                font-size: 16px;
@@ -96,8 +96,8 @@
                }
             }
             &:hover .discover {
-              visibility: visible;
-              opacity: 1;
+               visibility: visible;
+               opacity: 1;
             }
             .number {
                font-family: 'Cera', sans-serif;
@@ -115,4 +115,53 @@
          right: -50px;
       }
    }
+}
+
+@media screen and (max-width: 1250px) {
+   .projects {
+      height: auto;
+      margin: 100px 0;
+      .head {
+         margin: 90px 0 70px 70px;
+         h2 {
+            font-size: 35px;
+         }
+      }
+      .projects-wp {
+         margin: 0 auto;
+         max-width: 930px;
+         max-height: 450px;
+         position: relative;
+         padding: 0 30px;
+         .overflow {
+            .row {
+               &:hover .toggle {
+                  max-height: 300px;
+               }
+               h3 {
+                  font-size: 25px;
+               }
+               p {
+                  font-size: 14px;
+               }
+               h5 {
+                  font-size: 16px;
+               }
+               .number {
+                  font-size: 28px;
+               }
+               .discover {
+                  font-size: 18px;
+               }
+            }
+         }
+      }
+      .scroll-sign {
+         display: none;
+      }
+   }
+}
+@media screen and (max-width: 750px) {
+}
+@media screen and (max-width: 450px) {
 }

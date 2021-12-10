@@ -11,7 +11,7 @@
       }
    }
    .grid {
-      max-width: 855px;
+      width: max-content;
       margin: 0 auto;
       padding: 30px 20px;
       .row {
@@ -30,18 +30,22 @@
             }
          }
          .content {
-            @include flex-center;
-            gap: 40px;
+            display: flex;
             padding: 25px 0 25px 40px;
-            .item {
+            .items {
                @include flex-center;
-               flex-direction: column;
-               img {
-                  margin-bottom: 7px;
-               }
-               span {
-                  font-weight: 600;
-                  font-size: 18px;
+               gap: 40px;
+               margin-right: 40px;
+               .item {
+                  @include flex-center;
+                  flex-direction: column;
+                  img {
+                     margin-bottom: 7px;
+                  }
+                  span {
+                     font-weight: 600;
+                     font-size: 18px;
+                  }
                }
             }
          }
@@ -56,57 +60,36 @@
 @media screen and (max-width: 1250px) {
    .skills {
       height: auto;
+      margin: 100px 0;
       .head {
          margin: 90px 0 70px 70px;
          h2 {
             font-size: 35px;
          }
          h4 {
-            font-size: 14px;
-            max-width: 70%
+            font-size: 16px;
+            max-width: 500px;
          }
       }
       .grid {
-         max-width: 90%;
-         padding: 30px 20px;
          .row {
-            display: flex;
-            justify-content: center;
             .title-wp {
-               width: 180px;
-               display: flex;
-               align-items: center;
-               padding: 25px 40px 25px 0;
-               border-right: 5px solid $dark-yellow;
+               width: 160px;
                .title {
-                  font-size: 16px;
-                  line-height: 20px;
+                  font-size: 20px;
                }
             }
             .content {
-               @include flex-center;
-               gap: 40px;
-               padding: 25px 0 25px 40px;
-               flex-wrap: wrap;
-               max-width: 350px;
-               .item {
-                  @include flex-center;
-                  flex-direction: column;
-                  img {
-                     margin-bottom: 7px;
-                  }
-                  span {
-                     font-size: 12px;
+               flex-direction: column;
+               row-gap: 40px;
+               .items {
+                  margin-right: 15px;
+                  .item {
+                     span {
+                        font-size: 14px;
+                     }
                   }
                }
-            }
-            &.middle {
-               border-top: none;
-               border-bottom: none;
-            }
-            &.middle .title-wp, &.middle .content {
-               border-top: 5px solid $dark-yellow;
-               border-bottom: 5px solid $dark-yellow;
             }
          }
       }

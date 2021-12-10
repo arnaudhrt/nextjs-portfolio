@@ -86,3 +86,19 @@
       }
    }
 }
+@media screen and (max-width: 1250px) {
+   .contact {
+      height: auto;
+      margin: 100px 0;
+      .head {
+         margin: 90px 0 70px 70px;
+         h2 {
+            font-size: 35px;
+         }
+      }
+   }
+}
+@media screen and (max-width: 750px) {
+}
+@media screen and (max-width: 450px) {
+}
