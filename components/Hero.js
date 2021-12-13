@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 
-export default function Hero() {
+export default function Hero(props) {
    return (
       <section className="hero">
          <div className="center">
@@ -10,33 +10,29 @@ export default function Hero() {
                   <path d="M202 7.5H697.5V266.5H7.5V47" stroke="#C1B88A" strokeWidth="15"></path>
                </svg>
             </div>
-            <span className="left">HELLO, JE SUIS</span>
+            <span className="left">{props.heroTxt.hello}</span>
             <h1>ARNAUD</h1>
             <span className="right">
-               DÉVELOPPEUR
+               {props.heroTxt.front}
                <br />
-               FRONT-END
+               {props.heroTxt.dev}
             </span>
          </div>
          <div className="scroll-sign">
             <img src="./assets/images/scroll.png" alt="Icone scroll" />
          </div>
          <div className="social-bar">
-            <Link href="https://github.com/arnaudhrt">
-               <a>
-                  <img src="./assets/svg/github.svg" alt="Github icon" />
-               </a>
-            </Link>
-            <Link href="https://www.linkedin.com/in/arnaud-huret/">
-               <a>
-                  <img src="./assets/svg/linkedin.svg" alt="Github icon" />
-               </a>
-            </Link>
-            <Link href="https://dribbble.com/arnaudhrt">
-               <a>
-                  <img src="./assets/svg/dribbble.svg" alt="Github icon" />
-               </a>
-            </Link>
+            <a href="https://github.com/arnaudhrt" target="_blank">
+               <img src="./assets/svg/github.svg" alt="Github icon" />
+            </a>
+
+            <a href="https://www.linkedin.com/in/arnaud-huret/" target="_blank">
+               <img src="./assets/svg/linkedin.svg" alt="Github icon" />
+            </a>
+
+            <a href="https://dribbble.com/arnaudhrt" target="_blank">
+               <img src="./assets/svg/dribbble.svg" alt="Github icon" />
+            </a>
          </div>
       </section>
    )

@@ -9,7 +9,7 @@ export default function Projects(props) {
    return (
       <section className="projects">
          <div className="head">
-            <h2>MES PROJETS</h2>
+            <h2>{props.projectsTxt.titre}</h2>
             <div className="divider"></div>
          </div>
          <div className="projects-wp">

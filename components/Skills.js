@@ -1,14 +1,14 @@
 import React from 'react'
 
-export default function Skills() {
+export default function Skills(props) {
    return (
       <section className="skills">
          <div className="head">
             <div className="title-wp">
-               <h2>MES COMPÉTENCES</h2>
+               <h2>{props.skillsTxt.titre}</h2>
                <div className="divider"></div>
             </div>
-            <h4>Voici la stack technique des langages, frameworks et outils que je maîtrise et que j’utilise dans mes projets.</h4>
+            <h4>{props.skillsTxt.soustitre}</h4>
          </div>
          <div className="grid">
             <div className="row">
@@ -69,7 +69,7 @@ export default function Skills() {
             </div>
             <div className="row">
                <div className="title-wp">
-                  <span className="title">OUTILS</span>
+                  <span className="title">{props.skillsTxt.tools}</span>
                </div>
                <div className="content">
                   <div className="items">
