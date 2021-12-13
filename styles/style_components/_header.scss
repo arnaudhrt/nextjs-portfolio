@@ -24,3 +24,11 @@
      }
   }
 }
+@media screen and (max-width: 750px) {
+   .header {
+      justify-content: center;
+      .right {
+         display: none;
+      }
+   }
+}

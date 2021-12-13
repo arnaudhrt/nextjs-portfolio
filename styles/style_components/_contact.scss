@@ -89,16 +89,98 @@
 @media screen and (max-width: 1250px) {
    .contact {
       height: auto;
-      margin: 100px 0;
+      margin: 100px 0 0;
       .head {
          margin: 90px 0 70px 70px;
          h2 {
             font-size: 35px;
          }
+         h4 {
+            font-size: 16px;
+            max-width: 500px;
+         }
+      }
+      .center-wp {
+         .left {
+            h3 {
+               font-size: 22px;
+            }
+         }
+         .right {
+            .malt {
+               font-style: 22px;
+            }
+         }
+      }
+      .footer {
+         margin-top: 150px;
+         position: relative;
+         display: block;
+         text-align: center;
+         font-size: 14px;
+         font-family: 'Cera', sans-serif;
+         padding: 10px;
+         span {
+            color: $dark-yellow;
+         }
       }
    }
 }
 @media screen and (max-width: 750px) {
-}
-@media screen and (max-width: 450px) {
+   .contact {
+      height: auto;
+      margin: 100px 0 0;
+      .head {
+         display: block;
+         text-align: center;
+         margin: 30px auto;
+         h2 {
+            font-size: 30px;
+         }
+         h4 {
+            display: block;
+            margin: 0 auto;
+            font-size: 16px;
+            max-width: 500px;
+         }
+      }
+      .center-wp {
+         .center {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 750px;
+            .left {
+               display: flex;
+               flex-direction: column;
+               row-gap: 30px;
+               padding-right: 0px;
+               border-right: none;
+               h3 {
+                  font-size: 22px;
+               }
+            }
+            .right {
+               margin-top: 30px;
+               padding-left: 0px;
+               @include flex-center;
+               .malt {
+                  font-style: 22px;
+               }
+            }
+         }
+      }
+      .footer {
+         margin-top: 150px;
+         position: relative;
+         display: block;
+         text-align: center;
+         font-size: 14px;
+         font-family: 'Cera', sans-serif;
+         padding: 10px;
+         span {
+            color: $dark-yellow;
+         }
+      }
+   }
 }
