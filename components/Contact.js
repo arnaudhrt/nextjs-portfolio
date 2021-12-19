@@ -29,15 +29,15 @@ export default function Contact(props) {
                      <img src="./assets/svg/arrow-rotate.svg" alt="Arrow icon" />
                   </a>
                   <div className="social-bar">
-                     <a href="https://github.com/arnaudhrt" target="_blank">
+                     <a href="https://github.com/arnaudhrt" rel="noreferrer" target="_blank">
                         <img src="./assets/svg/github.svg" alt="Github icon" />
                      </a>
 
-                     <a href="https://www.linkedin.com/in/arnaud-huret/" target="_blank">
+                     <a href="https://www.linkedin.com/in/arnaud-huret/" rel="noreferrer" target="_blank">
                         <img src="./assets/svg/linkedin.svg" alt="Github icon" />
                      </a>
 
-                     <a href="https://dribbble.com/arnaudhrt" target="_blank">
+                     <a href="https://dribbble.com/arnaudhrt" rel="noreferrer" target="_blank">
                         <img src="./assets/svg/dribbble.svg" alt="Github icon" />
                      </a>
                   </div>

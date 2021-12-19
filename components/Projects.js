@@ -23,7 +23,7 @@ export default function Projects(props) {
                            <h5>Fonctionnalité développé : </h5>
                            <div className="functionality">
                               {el.fields.functionality.map((el) => (
-                                 <p>• {el}</p>
+                                 <p key={uuid()}>• {el}</p>
                               ))}
                            </div>
                            <h5>Stack technique du projet :</h5>
@@ -36,7 +36,7 @@ export default function Projects(props) {
                               </p>
                            ))}
                         </div>
-                        <a className="discover" href={el.fields.url} target="_blank">
+                        <a className="discover" href={el.fields.url} target="_blank" rel="noreferrer">
                            <i>Découvrir</i>
                            <img src="./assets/svg/arrow.svg" alt="" />
                         </a>

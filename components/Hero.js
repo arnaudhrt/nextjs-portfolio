@@ -22,15 +22,15 @@ export default function Hero(props) {
             <img src="./assets/images/scroll.png" alt="Icone scroll" />
          </div>
          <div className="social-bar">
-            <a href="https://github.com/arnaudhrt" target="_blank">
+            <a href="https://github.com/arnaudhrt" target="_blank" rel="noreferrer">
                <img src="./assets/svg/github.svg" alt="Github icon" />
             </a>
 
-            <a href="https://www.linkedin.com/in/arnaud-huret/" target="_blank">
+            <a href="https://www.linkedin.com/in/arnaud-huret/" target="_blank" rel="noreferrer">
                <img src="./assets/svg/linkedin.svg" alt="Github icon" />
             </a>
 
-            <a href="https://dribbble.com/arnaudhrt" target="_blank">
+            <a href="https://dribbble.com/arnaudhrt" target="_blank" rel="noreferrer">
                <img src="./assets/svg/dribbble.svg" alt="Github icon" />
             </a>
          </div>
