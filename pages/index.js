@@ -10,8 +10,8 @@ import { useState } from 'react'
 
 export async function getStaticProps() {
    const client = createClient({
-      space: process.env.CONTENTFUL_SPACE_ID,
-      accessToken: process.env.CONTENTFUL_ACCESS_KEY
+      space: 'keqtyez6fo9s',
+      accessToken: 'jieGB515AuW_aKEAnPy3WRhcwSCkCwyFzoKd6e1N0J0'
    })
 
    const res = await client.getEntries({
